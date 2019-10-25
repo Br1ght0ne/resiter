@@ -195,6 +195,7 @@
 //!
 
 pub mod and_then;
+pub mod enumerate;
 pub mod errors;
 pub mod filter;
 pub mod filter_map;
@@ -211,6 +212,7 @@ mod util;
 pub mod while_ok;
 
 pub use and_then::AndThen;
+pub use enumerate::*;
 pub use errors::GetErrors;
 pub use filter::Filter;
 pub use filter_map::FilterMap;
