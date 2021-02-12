@@ -4,7 +4,13 @@
 // file, You can obtain one at http://mozilla.org/MPL/2.0/.
 //
 
-use core::iter::*;
+cfg_if::cfg_if! {
+    if #[cfg(feature = "std")] {
+        use std::iter::*;
+    } else {
+        use core::iter::*;
+    }
+}
 
 use util::*;
 

@@ -176,8 +176,7 @@
 //! MPL 2.0
 //!
 
-#![cfg(not(test))]
-#![no_std]
+#![cfg_attr(not(feature = "std"), no_std)]
 
 pub mod and_then;
 pub mod errors;
